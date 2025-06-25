@@ -1,0 +1,563 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.SignUpInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/SignUpInsertServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignInServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.SignInServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignInServlet</servlet-name>
+        <url-pattern>/sign_in</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+       <servlet>
+        <servlet-name>OTPVerify</servlet-name>
+        <servlet-class>com.ecobarn.servlet.VerifyCodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OTPVerify</servlet-name>
+        <url-pattern>/VerifyCodeServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+      <servlet>
+        <servlet-name>Change_number</servlet-name>
+        <servlet-class>com.ecobarn.servlet.ChangeNumberServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Change_number</servlet-name>
+        <url-pattern>/ChangeNumberServlet</url-pattern>
+    </servlet-mapping>
+   
+    
+    
+      <servlet>
+        <servlet-name>Resend_OTP</servlet-name>
+        <servlet-class>com.ecobarn.servlet.resendWhatsAppOTP</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>Resend_OTP</servlet-name>
+        <url-pattern>/resendWhatsAppOTP</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+        <servlet>
+        <servlet-name>send_username</servlet-name>
+        <servlet-class>com.ecobarn.servlet.sendWhatsappusername</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>send_username</servlet-name>
+        <url-pattern>/sendWhatsappusername</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+       <servlet>
+        <servlet-name>SignIn_Check</servlet-name>
+        <servlet-class>com.ecobarn.servlet.SignInCheckServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>SignIn_Check</servlet-name>
+        <url-pattern>/SignInCheckServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+       <servlet>
+        <servlet-name>Password_Reset</servlet-name>
+        <servlet-class>com.ecobarn.servlet.ResetPasswordServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>Password_Reset</servlet-name>
+        <url-pattern>/ResetPasswordServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+           <servlet>
+        <servlet-name>SubscribeServletemailfooter</servlet-name>
+        <servlet-class>com.ecobarn.servlet.SubscribeServletemailfooter</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>SubscribeServletemailfooter</servlet-name>
+        <url-pattern>/SubscribeServletemailfooter</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+         <servlet>
+        <servlet-name>shipping_detailsServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.shipping_detailsServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>shipping_detailsServlet</servlet-name>
+        <url-pattern>/shipping_detailsServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+   
+      <servlet>
+        <servlet-name>displayShippingAlreadyServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.displayShippingAlreadyServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>displayShippingAlreadyServlet</servlet-name>
+        <url-pattern>/displayShippingAlreadyServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+     <servlet>
+        <servlet-name>confirm_shippingServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.confirm_shippingServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>confirm_shippingServlet</servlet-name>
+        <url-pattern>/confirm_shippingServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+     <servlet>
+        <servlet-name>final_paymentServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.final_paymentServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>final_paymentServlet</servlet-name>
+        <url-pattern>/final_paymentServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+     <servlet>
+        <servlet-name>OrderSuccessServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.OrderSuccessServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>OrderSuccessServlet</servlet-name>
+        <url-pattern>/OrderSuccessServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    <servlet>
+        <servlet-name>forwardToCashOnDelivery</servlet-name>
+        <servlet-class>com.ecobarn.servlet.forwardToCashOnDelivery</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>forwardToCashOnDelivery</servlet-name>
+        <url-pattern>/forwardToCashOnDelivery</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+   
+     <servlet>
+        <servlet-name>AdminDashboardStaticsServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.AdminDashboardStaticsServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>AdminDashboardStaticsServlet</servlet-name>
+        <url-pattern>/AdminDashboardStaticsServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+     <servlet>
+        <servlet-name>AddAdminServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.AddAdminServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>AddAdminServlet</servlet-name>
+        <url-pattern>/AddAdminServlet</url-pattern>
+    </servlet-mapping>
+    
+
+    
+        <servlet>
+        <servlet-name>DeleteAccountServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.DeleteAccountServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>DeleteAccountServlet</servlet-name>
+        <url-pattern>/DeleteAccountServlet</url-pattern>
+    </servlet-mapping>
+    
+
+    
+    
+        <servlet>
+        <servlet-name>ChangePhoneServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.ChangePhoneServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>ChangePhoneServlet</servlet-name>
+        <url-pattern>/ChangePhoneServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+      <servlet>
+        <servlet-name>displayAraisedTicketServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.displayAraisedTicketServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>displayAraisedTicketServlet</servlet-name>
+        <url-pattern>/displayAraisedTicketServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <servlet>
+        <servlet-name>ReplyTicketServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.ReplyTicketServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>ReplyTicketServlet</servlet-name>
+        <url-pattern>/ReplyTicketServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+       <servlet>
+        <servlet-name>AddProductServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.AddProductServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>AddProductServlet</servlet-name>
+        <url-pattern>/AddProductServlet</url-pattern>
+    </servlet-mapping>
+    
+
+
+
+ <servlet>
+        <servlet-name>PasswordResetVerifyCodeServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.PasswordResetVerifyCodeServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>PasswordResetVerifyCodeServlet</servlet-name>
+        <url-pattern>/PasswordResetVerifyCodeServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+     <servlet>
+        <servlet-name>ResetPasswordConfirmServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.ResetPasswordConfirmServlet</servlet-class>
+    </servlet>
+  
+    
+     <servlet-mapping>
+        <servlet-name>ResetPasswordConfirmServlet</servlet-name>
+        <url-pattern>/ResetPasswordConfirmServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+   <!--   <servlet-name>TestimonialServlet</servlet-name>
+		<servlet-class>com.ecobarn.servlet.TestimonialServlet</servlet-class>
+	</servlet>
+
+<servlet-mapping>
+<servlet-name>TestimonialServlet</servlet-name>
+<url-pattern>/reviews</url-pattern>
+
+</servlet-mapping>-->
+
+<servlet>
+<servlet-name>ItemDetailsController</servlet-name>
+<servlet-class>com.ecobarn.controller.ItemDetailsController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ItemDetailsController</servlet-name>
+<url-pattern>/ItemDetailsController</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>CartServlet</servlet-name>
+<servlet-class>com.ecobarn.servlet.CartServlet</servlet-class>
+</servlet>
+<!--  Servlet mapping  -->
+<servlet-mapping>
+<servlet-name>CartServlet</servlet-name>
+<url-pattern>/CartServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>VoiceController</servlet-name>
+<servlet-class>com.ecobarn.controller.VoiceController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>VoiceController</servlet-name>
+<url-pattern>/VoiceController</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>ContactUsServlet</servlet-name>
+<servlet-class>com.ecobarn.servlet.ContactUsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ContactUsServlet</servlet-name>
+<url-pattern>/ContactUsServlet</url-pattern>
+</servlet-mapping>
+<!--  Delete Ticket Servlet  -->
+<servlet>
+<servlet-name>DeleteTicketServlet</servlet-name>
+<servlet-class>com.ecobarn.servlet.DeleteTicketServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DeleteTicketServlet</servlet-name>
+<url-pattern>/DeleteTicketServlet</url-pattern>
+</servlet-mapping>
+<!--  My Tickets Servlet  -->
+<servlet>
+<servlet-name>MyTicketsServlet</servlet-name>
+<servlet-class>com.ecobarn.servlet.MyTicketsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>MyTicketsServlet</servlet-name>
+<url-pattern>/MyTicketsServlet</url-pattern>
+</servlet-mapping>
+<!--  Update Ticket Servlet  -->
+<servlet>
+<servlet-name>UpdateTicketServlet</servlet-name>
+<servlet-class>com.ecobarn.servlet.UpdateTicketServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>UpdateTicketServlet</servlet-name>
+<url-pattern>/UpdateTicketServlet</url-pattern>
+</servlet-mapping>
+    
+    
+    <servlet>
+<servlet-name>CartQuantityServlet</servlet-name>
+<servlet-class>com.ecobarn.servlet.CartQuantityServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>CartQuantityServlet</servlet-name>
+<url-pattern>/CartQuantityServlet</url-pattern>
+</servlet-mapping>
+    
+    
+    
+    
+    
+    
+    <!-- Sewpa -->
+    
+	<servlet>
+        <servlet-name>FaqFormServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.FaqFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FaqFormServlet</servlet-name>
+        <url-pattern>/FaqFormServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>FaqCRUDServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.FaqCRUDServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FaqCRUDServlet</servlet-name>
+        <url-pattern>/FaqCRUDServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>HelpServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.HelpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelpServlet</servlet-name>
+        <url-pattern>/HelpServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>TrackOrderServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.TrackOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TrackOrderServlet</servlet-name>
+        <url-pattern>/TrackOrderServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CancelOrderServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.CancelOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelOrderServlet</servlet-name>
+        <url-pattern>/CancelOrderServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DealServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.DealServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DealServlet</servlet-name>
+        <url-pattern>/DealServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DealDetailServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.DealDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DealDetailServlet</servlet-name>
+        <url-pattern>/DealDetailServlet</url-pattern>
+    </servlet-mapping>
+    
+
+    
+    
+    
+    
+    <!--    <servlet>
+        <servlet-name>AllItemsDisplayDAO</servlet-name>
+        <servlet-class>com.ecobarn.servlet.AllItemsDisplayDAO</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllItemsDisplayDAO</servlet-name>
+        <url-pattern>/AllItemsDisplayDAO</url-pattern>
+    </servlet-mapping>
+    -->
+    
+    
+    
+    
+    
+    
+    
+       <servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.UpdateProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/UpdateProfileServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+          <servlet>
+        <servlet-name>SubmitReviewServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.SubmitReviewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitReviewServlet</servlet-name>
+        <url-pattern>/SubmitReviewServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+       <servlet>
+        <servlet-name>UpdateOrderStatus</servlet-name>
+        <servlet-class>com.ecobarn.servlet.UpdateOrderStatus</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateOrderStatus</servlet-name>
+        <url-pattern>/UpdateOrderStatus</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- Akindu -->
+        <servlet>
+        <servlet-name>AddressServlet</servlet-name>
+        <servlet-class>com.ecobarn.servlet.AddressServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddressServlet</servlet-name>
+        <url-pattern>/addressServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <listener>
+    <listener-class>com.ecobarn.util.MyAppContextListener</listener-class>
+</listener>
+    
+</web-app>

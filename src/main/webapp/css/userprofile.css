@@ -1,0 +1,180 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    height: 100%;
+}
+
+/* Container holding both sidebar and content */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    min-height: calc(100vh - 80px);
+    overflow: hidden;
+    border: 50px solid #ddd;  /* Border around the two sections */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 290px;
+    background-color: #3a9838; /* Greenish background */
+    padding: 20px;
+    color: white;
+    border-right: 2px solid #ddd;  /* Border between sidebar and content */
+    
+}
+
+.sidebar .user-info {
+    text-align: center;
+    margin-bottom: 20px;
+    display: block; 
+}
+
+.sidebar .user-info .user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar .user-info .user-status {
+	 font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: block;  /* Ensure it is displayed on a new line */
+}
+
+.sidebar .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centers the menu items vertically */
+    flex-grow: 1;  /* Takes the remaining space after user info */
+}
+
+.sidebar .menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .menu ul li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sidebar .menu ul li a {
+    display: block;
+    padding: 12px 20px;
+    background-color: #45a049;  /* Green button background */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar .menu ul li a:hover {
+    background-color: #387c3f;  /* Darker green on hover */
+}
+
+
+.sidebar .menu ul li a:active {
+    background-color: #2c5c2f;  /* Even darker green when button is pressed */
+}
+
+
+
+/* Main content container */
+.main-content {
+    padding: 40px;
+    background: #f1f8e9;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    color: #333;
+    width: 100%; /* Ensure the main content takes full width */
+    height: 100%; /* Fill the height */
+    box-sizing: border-box;
+}
+
+/* Title for the section */
+.main-content h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #388e3c;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for content boxes */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+    grid-auto-rows: minmax(250px, auto); /* Increase the height of each box */
+}
+
+/* Styling for each content box */
+.content-box {
+    background-color: #388e3c;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px; /* Adjust width as needed */
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensure the box takes full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title inside each box */
+.content-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Description inside each box */
+.content-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allow description to grow and take remaining space */
+}
+
+/* Button style */
+.content-box .btn {
+    background-color: #66bb6a;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+/* Hover effect for the button */
+.content-box .btn:hover {
+    background-color: #388e3c;
+}
+
+/* For screens larger than 768px, make 3 columns */
+@media (min-width: 768px) {
+    .content-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+    }
+}
+
+
+
+
