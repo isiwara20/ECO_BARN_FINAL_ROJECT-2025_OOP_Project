@@ -67,7 +67,7 @@ public class WhatsAppUsername {
                 + "}";
         
         // Bearer token (Replace with actual token)
-        String token = "5d7b4eecea2a46af1eb0";
+        String token = "**";
 
         try {
             // Create a URL object and open the connection
