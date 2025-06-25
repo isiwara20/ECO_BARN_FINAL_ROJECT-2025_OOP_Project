@@ -33,8 +33,8 @@
     
     String email = paymentInfo.getEmail();
     String phone = paymentInfo.getPhone();
-    String merchant_id = "PI11698";
-    String secret_key = "e323367ed65ed033115ff27555a418fd4f0e534067c49e0a10b9949a871427a0";
+    String merchant_id = "**";
+    String secret_key = "*********";
 
     // Prepare payload
     Map<String, Object> payload = new HashMap<>();
